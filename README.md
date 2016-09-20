@@ -1,4 +1,5 @@
-RequireJs Experiment
+# RequireJs Experiment
+##### RequireJS Trace Dependency Sample
 
-- npm install
-- node index.js to run optimizer
+1. npm install
+- node index.js
