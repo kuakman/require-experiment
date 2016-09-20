@@ -1,0 +1,15 @@
+{
+  "name": "require-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patricio Ferreira <3dimentionar@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "fs-extra": "^0.30.0",
+    "requirejs": "^2.3.2"
+  }
+}
