@@ -1,19 +1,23 @@
 requirejs.config({
 
-	baseUrl: './',
+	baseUrl: '.',
 
 	/** Test Case 1 **/
-	modules: [{
-		name: 'a', exclude: ['c'],
-	}, {
-		name: 'b', exclude: ['a']
-	}]
+	// modules: [{
+	// 	name: 'moda/main', exclude: ['modb/main', 'misc/main']
+	// }, {
+	// 	name: 'modb/main', exclude: ['moda/main', 'misc/main']
+	// }, {
+	// 	name: 'misc/main', exclude: ['moda/main', 'modb/main']
+	// }]
 
 	/** Test Case 2 **/
-	// modules: [{
-	// 	name: 'b', exclude: ['a']
-	// }, {
-	// 	name: 'a', exclude: ['c'],
-	// }]
+	modules: [{
+		name: 'modb/main', exclude: ['moda/main', 'misc/main']
+	}, {
+		name: 'moda/main', exclude: ['modb/main', 'misc/main']
+	}, {
+		name: 'misc/main', exclude: ['moda/main', 'modb/main']
+	}]
 
 });

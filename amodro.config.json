@@ -1,0 +1,15 @@
+{
+	"main": {
+		"rootDir": "./src",
+		"id": "app",
+		"includeContents": true
+	},
+	"config": {
+		"baseUrl": ".",
+		"modules": [{
+			"name": "moda/main", "exclude": ["modb/main", "misc/main"],
+		}, {
+			"name": "modb/main", "exclude": ["moda/main", "misc/main"]
+		}]
+	}
+}

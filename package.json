@@ -9,7 +9,9 @@
   "author": "Patricio Ferreira <3dimentionar@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
+    "amodro-trace": "^0.3.2",
     "fs-extra": "^0.30.0",
+    "glob": "^7.1.0",
     "requirejs": "^2.3.2"
   }
 }
