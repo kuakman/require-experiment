@@ -3,6 +3,10 @@
 		"includeContents": true
 	},
 	"config": {
-		"baseUrl": "."
+		"baseUrl": "./",
+		"map": { "*": { "css": "libs/require-css/css" } },
+		"paths": {
+			"text": "libs/requirejs-text/text"
+		}
 	}
 }

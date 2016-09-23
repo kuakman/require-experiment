@@ -10,10 +10,14 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "amodro-trace": "^0.3.2",
+    "async": "^2.0.1",
     "extend": "^3.0.0",
     "fs-extra": "^0.30.0",
     "glob": "^7.1.0",
+    "require-css": "^0.1.8",
     "requirejs": "^2.3.2",
-    "underscore": "^1.8.3"
+    "requirejs-text": "^2.0.12",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
   }
 }
