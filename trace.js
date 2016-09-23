@@ -1,5 +1,5 @@
 // Proof of concept for amodro-trace
-// See what this guy does for me.
+// See what guy this does for me.
 
 let path = require('path');
 let resolve = path.resolve;
@@ -18,17 +18,19 @@ class Tracer {
 	init(file) {
 		return {
 			main: extend(true, { rootDir: './src', id: file }, ad_config.main),
-			config: ad_config.config
+			config: ad_config.config,
+			file: file
 		};
 	}
 
 	run() {
 		return amodroTrace(this.main, this.config)
-			.then(this.success)
+			.then(_.bind(this.success, this))
 			.catch(this.error);
 	}
 
 	success(results) {
+		console.log(`> FILE ${this.file} >>>>>>>>>>`);
 		console.log(JSON.stringify(results, null, 2));
 	}
 

@@ -3,13 +3,6 @@
 		"includeContents": true
 	},
 	"config": {
-		"baseUrl": ".",
-		"modules": [{
-			"name": "moda/main", "exclude": ["modb/main", "misc/main"]
-		}, {
-			"name": "modb/main", "exclude": ["moda/main", "misc/main"]
-		}, {
-			"name": "misc/main", "exclude": ["moda/main", "modb/main"]
-		}]
+		"baseUrl": "."
 	}
 }
